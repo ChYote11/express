@@ -9,8 +9,8 @@ const mysqlDS = new DataSource({
     password: "",
     database: "GuideBook",
     entities: ["models/*.{.ts,js}"],
-    logging: false,
-    synchronize: true
+    logging: true,
+    synchronize: false
 
 })
 

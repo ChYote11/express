@@ -9,17 +9,13 @@ module.exports = new EntitySchema({
             type: 'int',
             generated: true
         },
-        create_time: {
-            type: 'timestamp',
-            createDate: true
-        },
         firstname: {
             type: 'varchar',
-            length: 255,
+            // length: 255,
         },       
         lastname: {
             type: 'varchar',
-            length: 255,
+            // length: 255,
         },
         username: {
             type: 'varchar',
@@ -32,6 +28,10 @@ module.exports = new EntitySchema({
         point: {
             type: 'int',
             nullable: true,
+        },
+        create_time: {
+            type: 'timestamp',
+            createDate: true
         },
     },
 
