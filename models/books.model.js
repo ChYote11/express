@@ -28,7 +28,8 @@ module.exports = new EntitySchema({
             type: 'decimal',
             precision: 12,
             scale: 7
-        }
+        },
+
     },
     relations: {
         images: {

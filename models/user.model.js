@@ -1,29 +1,33 @@
 var EntitySchema = require("typeorm").EntitySchema;
-
 module.exports = new EntitySchema({
     name: "User",
     tableName: "user",
     columns: {
-        user_id: {
+        id: {
             primary: true,
-            type: 'int',
+            type: 'varchar',
             generated: true
         },
-        firstname: {
+        user_id: {
+            // primary: true,
+            type: 'text',
+            // generated: true
+        },
+        displayname: {
             type: 'varchar',
             // length: 255,
         },       
-        lastname: {
+        statusMessage: {
             type: 'varchar',
             // length: 255,
         },
-        username: {
-            type: 'varchar',
-            length: 50,
-        },
-        password: {
-            type: 'varchar',
-            length: 50,
+        // accessToken: {
+        //     type: 'varchar',
+        //     // length: 50,
+        // },
+        imgUrl: {
+            type: 'text',
+            
         },
         point: {
             type: 'int',
@@ -34,5 +38,4 @@ module.exports = new EntitySchema({
             createDate: true
         },
     },
-
 })
